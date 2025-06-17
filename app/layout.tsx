@@ -1,14 +1,14 @@
-import "../styles/globals.css";
+import './globals.css'
+import { ReactNode } from 'react'
 
-export const metadata = {
-  title: "Cashbacksa – Coming Soon",
-  description: "قريبًا على cashbacksa.com",
-};
-
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="ar" dir="rtl">
-      <body>{children}</body>
+      <body style={{ backgroundColor: '#E8F9EC', fontFamily: 'sans-serif' }}>
+        <main style={{ padding: '4rem', textAlign: 'center' }}>
+          {children}
+        </main>
+      </body>
     </html>
-  );
+  )
 }
