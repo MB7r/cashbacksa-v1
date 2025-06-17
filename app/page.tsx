@@ -1,8 +1,10 @@
-export default function HomePage() {
+export default function Home() {
   return (
-    <main style={{ padding: '2rem' }}>
-      <h1>مرحبًا بك في Cashbacksa</h1>
-      <p>ابدأ بجمع الكاش باك والنقاط فورًا</p>
+    <main className="flex min-h-screen items-center justify-center bg-white text-center p-8">
+      <div>
+        <h1 className="text-4xl font-bold mb-4">🚧 Cashbacksa – قريبًا</h1>
+        <p className="text-lg text-gray-600">نعمل على شيء رائع لك! ترقّب إطلاق منصتنا قريبًا 🎉</p>
+      </div>
     </main>
   );
 }
